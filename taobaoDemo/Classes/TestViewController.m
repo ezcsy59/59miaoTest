@@ -197,7 +197,8 @@ static int page_no;
     NSURL *url=[NSURL URLWithString:[temp valueForKey:@"pic_url"]];
     [cell.image setImageWithURL:url];
 
-    
+    NSString *price = [temp valueForKey:@"price"];
+    cell.price.text = price ;
     
     return cell;
 }

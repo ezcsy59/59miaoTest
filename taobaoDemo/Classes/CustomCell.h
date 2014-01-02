@@ -11,6 +11,7 @@
 @interface CustomCell : UITableViewCell
 @property (retain, nonatomic) IBOutlet UILabel *title;
 @property (retain, nonatomic) IBOutlet UILabel *subtitle;
+@property (retain, nonatomic) IBOutlet UILabel *price;
 @property (retain, nonatomic) IBOutlet UIImageView *image;
 
 
