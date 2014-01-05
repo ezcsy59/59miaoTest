@@ -65,7 +65,10 @@ static NSString* const app_secret_key = @"7a8c5138e845ee975cb17f8a896c6b79";
 		[str appendFormat:@"%@%@",obj, [self objectForKey:obj]];
 	}
     re= [app_secret_key stringByAppendingString:str];
+    
+//    re= [NSURL URLWithString: [re stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]] ;
     NSLog(re);
+    
     NSString *hash = [re md5];
     [self setObject:hash forKey:@"sign"];
 	array = [self allKeys];
@@ -79,8 +82,9 @@ static NSString* const app_secret_key = @"7a8c5138e845ee975cb17f8a896c6b79";
 		[url appendFormat:@"%@=%@", obj, [self objectForKey:obj]];
 	}
 	
-    
-	return url;
+//    url= [NSURL URLWithString: [url stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]] ;
+//    NSLog(url);
+    return url;
 
     
 }
@@ -150,7 +154,8 @@ static NSString* const app_secret_key = @"7a8c5138e845ee975cb17f8a896c6b79";
 		[url appendFormat:@"%@=%@", obj, [self objectForKey:obj]];
 	}
 	//[url appendFormat:@"&sign=%@", hash];
-    
+     url= [NSURL URLWithString: [url stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]] ;
+    NSLog(url);
 	return url;
 
     

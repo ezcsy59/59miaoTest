@@ -44,7 +44,10 @@ static int page_no;
     NSMutableDictionary *dict = [[NSMutableDictionary alloc] init];
 	[dict testDefault];
     [dict setObject:count forKey:@"page_no"];
-	[dict setObject:@"iPhone" forKey:@"keyword"];
+    NSString *s1=@"三星";
+//    NSString *s2= [NSURL URLWithString: [s1 stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]] ;
+   	[dict setObject:s1 forKey:@"keyword"];
+    
 	NSString *urlString = [dict urlString];
 	urlString = [NSString stringWithFormat:@"http://api.59miao.com/router/rest?%@", urlString];
 	urlString = [urlString stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
@@ -100,7 +103,7 @@ static int page_no;
 //
     NSMutableDictionary *dict = [[NSMutableDictionary alloc] init];
 	[dict testDefault];
-	[dict setObject:@"iPhone" forKey:@"keyword"];
+	[dict setObject:@"iphone" forKey:@"keyword"];
 	NSString *urlString = [dict urlString];
 	urlString = [NSString stringWithFormat:@"http://api.59miao.com/router/rest?%@", urlString];
 	urlString = [urlString stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
