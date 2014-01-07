@@ -9,11 +9,12 @@
 #import "taobaoDemoAppDelegate.h"
 #import "taobaoDemoViewController.h"
 #import "TestViewController.h"
+#import "SearchVC.h"
 @implementation taobaoDemoAppDelegate
 
 @synthesize window;
 @synthesize viewController;
-
+@synthesize testsch;
 
 #pragma mark -
 #pragma mark Application lifecycle
@@ -25,7 +26,7 @@
     // Add the view controller's view to the window and display.
 //    [self.window addSubview:viewController.view];
     [self.window makeKeyAndVisible];
-    TestViewController *test = [[TestViewController alloc] init];
+    SearchVC *test = [[SearchVC alloc] init];
     
     UINavigationController *nav= [[UINavigationController alloc] initWithRootViewController:test];
    

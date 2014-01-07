@@ -11,6 +11,8 @@
 		04331DE71872AC1E00D643DF /* MJRefreshBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04331DE11872AC1E00D643DF /* MJRefreshBaseView.m */; };
 		04331DE81872AC1E00D643DF /* MJRefreshFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04331DE31872AC1E00D643DF /* MJRefreshFooterView.m */; };
 		04331DE91872AC1E00D643DF /* MJRefreshHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04331DE51872AC1E00D643DF /* MJRefreshHeaderView.m */; };
+		043B9A25187C12E600A6EBB2 /* SearchVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 043B9A23187C12E600A6EBB2 /* SearchVC.m */; };
+		043B9A26187C12E600A6EBB2 /* SearchVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 043B9A24187C12E600A6EBB2 /* SearchVC.xib */; };
 		045BC8261875AD93006F9DEB /* CustomObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 045BC8231875AD93006F9DEB /* CustomObject.m */; };
 		045BC8271875AD93006F9DEB /* SDImageView+SDWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 045BC8251875AD93006F9DEB /* SDImageView+SDWebCache.m */; };
 		04946C7F187255390020488C /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04946C7D187255390020488C /* TestViewController.m */; };
@@ -65,6 +67,9 @@
 		04331DE31872AC1E00D643DF /* MJRefreshFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshFooterView.m; sourceTree = "<group>"; };
 		04331DE41872AC1E00D643DF /* MJRefreshHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshHeaderView.h; sourceTree = "<group>"; };
 		04331DE51872AC1E00D643DF /* MJRefreshHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshHeaderView.m; sourceTree = "<group>"; };
+		043B9A22187C12E600A6EBB2 /* SearchVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchVC.h; sourceTree = "<group>"; };
+		043B9A23187C12E600A6EBB2 /* SearchVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchVC.m; sourceTree = "<group>"; };
+		043B9A24187C12E600A6EBB2 /* SearchVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchVC.xib; sourceTree = "<group>"; };
 		045BC8221875AD93006F9DEB /* CustomObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomObject.h; sourceTree = "<group>"; };
 		045BC8231875AD93006F9DEB /* CustomObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomObject.m; sourceTree = "<group>"; };
 		045BC8241875AD93006F9DEB /* SDImageView+SDWebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SDImageView+SDWebCache.h"; sourceTree = "<group>"; };
@@ -282,6 +287,9 @@
 				04946C8D1872852C0020488C /* CustomCell.h */,
 				04946C8E1872852C0020488C /* CustomCell.m */,
 				04946C90187285A70020488C /* CustomCell.xib */,
+				043B9A22187C12E600A6EBB2 /* SearchVC.h */,
+				043B9A23187C12E600A6EBB2 /* SearchVC.m */,
+				043B9A24187C12E600A6EBB2 /* SearchVC.xib */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -399,6 +407,7 @@
 				04946C91187285A70020488C /* CustomCell.xib in Resources */,
 				04331DE61872AC1E00D643DF /* MJRefresh.bundle in Resources */,
 				04A503B21875AAE500049714 /* MainWindow-iPad.xib in Resources */,
+				043B9A26187C12E600A6EBB2 /* SearchVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -443,6 +452,7 @@
 				04331DE91872AC1E00D643DF /* MJRefreshHeaderView.m in Sources */,
 				045BC8261875AD93006F9DEB /* CustomObject.m in Sources */,
 				045BC8271875AD93006F9DEB /* SDImageView+SDWebCache.m in Sources */,
+				043B9A25187C12E600A6EBB2 /* SearchVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

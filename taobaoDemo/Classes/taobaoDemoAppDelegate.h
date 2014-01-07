@@ -13,8 +13,11 @@
 @interface taobaoDemoAppDelegate : NSObject <UIApplicationDelegate> {
     UIWindow *window;
     taobaoDemoViewController *viewController;
+    
+    
+    NSString *testsch;
 }
-
+@property (nonatomic, retain) NSString  *testsch;
 @property (nonatomic, retain) IBOutlet UIWindow *window;
 @property (nonatomic, retain) IBOutlet taobaoDemoViewController *viewController;
 

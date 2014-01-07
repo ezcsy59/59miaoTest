@@ -13,6 +13,7 @@
 #import "ASIHTTPRequest.h"
 #import "SBJSON.h"
 #import "MJRefresh.h"
+#import "taobaoDemoAppDelegate.h"
 @interface TestViewController () <MJRefreshBaseViewDelegate>
 {
      MJRefreshFooterView *_footer;
@@ -31,6 +32,8 @@ static int page_no;
     if (self) {
         // Custom initialization
         self.array =[[NSMutableArray alloc] init ];
+        taobaoDemoAppDelegate *myDelegate = [[UIApplication sharedApplication] delegate];
+        self.search= myDelegate.testsch;
     }
     return self;
 }
@@ -44,7 +47,7 @@ static int page_no;
     NSMutableDictionary *dict = [[NSMutableDictionary alloc] init];
 	[dict testDefault];
     [dict setObject:count forKey:@"page_no"];
-    NSString *s1=@"三星";
+    NSString *s1=self.search;
 //    NSString *s2= [NSURL URLWithString: [s1 stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]] ;
    	[dict setObject:s1 forKey:@"keyword"];
     
@@ -103,7 +106,7 @@ static int page_no;
 //
     NSMutableDictionary *dict = [[NSMutableDictionary alloc] init];
 	[dict testDefault];
-	[dict setObject:@"iphone" forKey:@"keyword"];
+	[dict setObject:self.search forKey:@"keyword"];
 	NSString *urlString = [dict urlString];
 	urlString = [NSString stringWithFormat:@"http://api.59miao.com/router/rest?%@", urlString];
 	urlString = [urlString stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
